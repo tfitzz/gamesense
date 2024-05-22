@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-gray text-white m-8;
+}
+
+h1, h2 {
+  @apply font-bold text-white text-lg;
+}
+
+main {
+  @apply max-w-6xl my-12 mx-auto px-8;
+}
+
+main > h2 {
+  @apply mb-4 pb-2 text-base;
+}
+
+p > a {
+  @apply text-white underline;
+}
+
+nav {
+  @apply 
+    pb-4 border-b-2 
+    flex items-center 
+    gap-5 my-10 
+    mx-auto max-w-6xl;
+}
+
+nav a, nav span {
+  @apply text-white;
+}
+
+nav a:hover {
+  @apply text-green;
+}
+
+.matchup-ticket {
+  min-width: 600px;
+
+  @apply
+    h-14
+    mx-12
+    rounded-md shadow-sm  
+    bg-gray border-y-2 border-dark-gray
+    flex items-center justify-around
+}
+.matchup-ticket > h2 {
+  width: 200px;
+}
+.matchup-ticket > h3 {
+  @apply text-green text-sm;
+}
+
+select {
+  @apply 
+  py-2
+  px-4
+  mx-4
+  text-white 
+  bg-dark-gray
+  rounded-md
+  outline-none
+}
+
+/* .styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.styled-table th,
+.styled-table td {
+  @apply  
+    
+    max-w-full
+    p-6
+}
+
+.styled-table th {
+  @apply  
+    bg-green;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  @apply
+    bg-green;
+} */
+.styled-table {
+  @apply w-full border-collapse text-left;
+
+  th,
+  td {
+    @apply px-4 py-3 text-sm; /* Consistent padding and text size */
+  }
+
+  th {
+    @apply bg-green text-white font-semibold uppercase tracking-wider; /* Improved header style */
+  }
+
+  tbody tr:nth-child(even) {
+    @apply bg-green; /* Lighter green for even rows */
+  }
+
+  tbody tr:hover {
+    @apply bg-green transition duration-150 ease-in-out; /* Soft hover effect */
+  }
+
+  tr {
+    @apply border-b border-gray; /* Light gray borders for separation */
+  }
+
+  th,
+  td {
+    @apply border border-gray; /* Consistent inner borders */
+  }
+}
