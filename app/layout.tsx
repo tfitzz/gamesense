@@ -14,7 +14,6 @@ function Header() {
     <header style={{ display: 'flex', justifyContent: 'space-between', padding: 20 }}>
       <SignedIn>
         {/* Mount the UserButton component */}
-        <UserButton />
         <Navbar />
       </SignedIn>
       <SignedOut>

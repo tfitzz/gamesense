@@ -21,6 +21,7 @@ export default function Navbar() {
       <Link href="/odds">Odds</Link>
       {/* <Link href="/predictor">Predictor</Link> */}
       <Link href="/arbitrage">Arbitrage</Link>
+      <Link href="/analytics">Analytics </Link>
       <UserButton />
     </nav>
   )
